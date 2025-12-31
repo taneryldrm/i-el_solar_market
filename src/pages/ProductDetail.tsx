@@ -274,7 +274,7 @@ const ProductDetail: React.FC = () => {
                         <div className="flex-1">
                             <div className="flex items-center gap-3 mb-4">
                                 <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-full">
-                                    {product.brand || 'Orbus'}
+                                    {product.brand || 'İçel Solar Market'}
                                 </span>
                                 {product.is_active && (
                                     <span className="flex items-center gap-1 text-green-600 text-xs font-bold uppercase tracking-wider">

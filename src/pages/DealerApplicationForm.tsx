@@ -92,7 +92,7 @@ export default function DealerApplicationForm() {
                     <div className="text-center mb-10">
                         <h1 className="text-3xl md:text-5xl font-black text-[#1a1a1a] mb-4">Bayilik Başvurusu</h1>
                         <p className="text-gray-500 max-w-2xl mx-auto">
-                            Orbus yetkili bayisi olmak için aşağıdaki formu doldurunuz.
+                            İçel Solar Market yetkili bayisi olmak için aşağıdaki formu doldurunuz.
                             Başvurunuz değerlendirildikten sonra size dönüş yapılacaktır.
                         </p>
                     </div>

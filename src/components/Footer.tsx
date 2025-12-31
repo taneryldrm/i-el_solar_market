@@ -53,7 +53,7 @@ export default function Footer() {
                         </li>
                         <li className="flex items-center justify-center sm:justify-start gap-3">
                             <span className="text-[#f0c961]">✉️</span>
-                            <span>info@orbus.com.tr</span>
+                            <span>info@icelsolarmarket.com</span>
                         </li>
                     </ul>
                 </div>

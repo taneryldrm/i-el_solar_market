@@ -45,7 +45,7 @@ export default function Home() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 10, ease: "linear" }}
-            src="https://images.unsplash.com/photo-1548613053-220e88863f82?q=80&w=2692&auto=format&fit=crop"
+            src="/solar-hero.png"
             alt="Solar Panels"
             className="w-full h-full object-cover"
           />
