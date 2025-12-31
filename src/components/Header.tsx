@@ -191,8 +191,7 @@ export default function Header() {
                         <div className="flex flex-col items-center justify-center text-center absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 md:flex-row md:gap-8">
                             <Link to="/" className="group flex flex-col items-center hover:scale-105 transition-transform duration-300">
                                 <div className="flex items-baseline gap-0.5">
-                                    <span className="text-2xl md:text-4xl font-black text-[#f0c961] italic tracking-tighter drop-shadow-sm select-none">O</span>
-                                    <span className="text-2xl md:text-4xl font-black text-[#222] italic tracking-tighter select-none">RBUS</span>
+                                    <span className="text-2xl md:text-3xl font-black text-[#222] italic tracking-tighter select-none">İçel Solar Market</span>
                                 </div>
                             </Link>
 

@@ -8,8 +8,8 @@ export default function Footer() {
 
                 {/* 1. Marka & Hakkında (Eski Yerinde) */}
                 <div className="col-span-1 sm:col-span-2 lg:col-span-1">
-                    <div className="text-4xl font-black italic mb-6 text-white tracking-tighter">
-                        <span className="text-[#f0c961]">O</span>RBUS
+                    <div className="text-3xl font-black italic mb-6 text-white tracking-tighter">
+                        İçel Solar Market
                     </div>
                     <p className="text-gray-400 text-sm leading-relaxed max-w-sm mx-auto sm:mx-0">
                         Türkiye'nin enerji ve aydınlatma alanındaki lider markası. Yenilikçi çözümler, sürdürülebilir gelecek.
