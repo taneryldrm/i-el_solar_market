@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabaseClient';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { fetchUserRole, calculateVariantPrice } from '../lib/pricing';
 import { TURKEY_DATA } from '../constants/turkey-data';
 import SearchableSelect from '../components/SearchableSelect';
@@ -35,7 +35,7 @@ const CheckoutPage: React.FC = () => {
     const [cartItems, setCartItems] = useState<CheckoutItem[]>([]);
     const [cartTotal, setCartTotal] = useState<number>(0);
     const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
+
     const [addresses, setAddresses] = useState<Address[]>([]);
     const [selectedAddressId, setSelectedAddressId] = useState<string | null>(null);
     const [showAddressForm, setShowAddressForm] = useState<boolean>(false);
@@ -66,7 +66,7 @@ const CheckoutPage: React.FC = () => {
                 setAddresses(addressData || []);
 
                 const { data: cartData } = await supabase.from('carts').select('id').eq('profile_id', profileId).eq('status', 'active').maybeSingle();
-                if (!cartData) { setError("Aktif sepet yok."); setLoading(false); return; }
+                if (!cartData) { console.error("Aktif sepet yok."); setLoading(false); return; }
 
                 const { data: itemsData } = await supabase
                     .from('cart_items')
@@ -104,7 +104,7 @@ const CheckoutPage: React.FC = () => {
                     setCartItems(itemsWithTotals);
                     setCartTotal(itemsWithTotals.reduce((sum, item) => sum + (item.lineTotal || 0), 0));
                 }
-            } catch (err) { console.error(err); setError("Hata oluştu."); } finally { setLoading(false); }
+            } catch (err) { console.error(err); console.error("Hata oluştu."); } finally { setLoading(false); }
         };
         fetchCheckoutData();
     }, [navigate]);
